@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рабочий календарь</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-12 col-md-6">
+                <h1 class="text-center mb-4">Рабочий календарь</h1>
+                <div class="form-group">
+                    <label for="start-date">Выберите начальную дату:</label>
+                    <input type="date" class="form-control" id="start-date">
+                </div>
+                <button id="generate-btn" class="btn btn-primary btn-block mb-4">Сгенерировать расписание</button>
+                <div id="schedule-container">
+                    <ul id="schedule-list" class="list-group"></ul>
+                    <div id="total-hours" class="mt-3"></div>
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-center mb-4">Добавить дополнительный рабочий день</h2>
+                    <div class="form-group">
+                        <label for="extra-work-date">Дата:</label>
+                        <input type="date" class="form-control" id="extra-work-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-time">Начало работы:</label>
+                        <input type="time" class="form-control" id="start-time">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-time">Конец работы:</label>
+                        <input type="time" class="form-control" id="end-time">
+                    </div>
+                    <button id="add-extra-work-day-btn" class="btn btn-success btn-block">Добавить рабочий день</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
