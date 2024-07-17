@@ -1,2 +1,2 @@
-# -WorkCalendar
+# WorkCalendar
 WorkCalendar on GitHub
